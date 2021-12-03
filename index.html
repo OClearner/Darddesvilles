@@ -38,10 +38,18 @@
       </div>
       <nav class="header__nav">
         <ul class="header__links">
-          <li><a href="#portfolio">Réalisation</a></li>
-          <li><a href="#">Engagement</a></li>
-          <li><a href="#">Équipe</a></li>
-          <li><a href="#">Devis</a></li>
+          <li>
+            <a href="#portfolio">Réalisation</a>
+          </li>
+          <li>
+            <a href="#commitment">Engagements</a>
+          </li>
+          <li>
+            <a href="#team">Équipe</a>
+          </li>
+          <li>
+            <a href="#estimate">Devis</a>
+          </li>
         </ul>
         <a href="tel:+123456789" class="header__cta">on s'appelle ?</a>
       </nav>
@@ -77,11 +85,11 @@
 
     
     <main>
-      <!-- TESTMONY -->
-    <section></section>
+      <!-- TESTMONY  ( intégrer avis google)-->
+    <!-- <section></section> -->
     <!-- FIN TESTMONY -->
     <!-- SECTION REALISATION -->
-    <section id="portfolio">
+    <section id="portfolio" class="realistion">
       <h2>Nos réalisations valent mille mots</h2>
       <div class="realisation__wrapper">
         <div><img src="Public/img/realisation/Nid-de-frelons-dans-un-arbre.jpg" alt="nid de frelon dans un arbre" width="250px" height 250px></div>
@@ -95,14 +103,94 @@
     </section>
     <!-- FIN SECTION REALISATION -->
     <!-- SECTION ENGAGEMENT -->
-    <section></section>
+    <section id="commitment" class="engagement">
+      <h2>3 valeurs, 2 spécialistes, et <strong class="engagement__vous">vous</strong></h2>
+      <article class="engagement__card">
+          <img src="Public/img/certificat/grenelle-rt2012-seguin2.png" width="250px" alt="icone d'une maison">
+          <h3></h3>
+          <p></p>
+      </article>
+      <article class="engagement__card">
+          <img src="Public/img/certificat/recycle-29227_1280.png" width="250px" alt="icone de la planète">
+
+      </article>
+      <article class="engagement__card">
+          <img src="Public/img/certificat/Logo-alsace.png" width="250px" alt="Logo-alsace">
+          
+      </article>
+
+    </section>
     <!-- FIN SECTION ENGAGEMENT -->
     <!-- SECTION TEAM -->
-    <section></section>
+    <section id="team" class="equipe">
+      <h2>Notre équipe</h2>
+      <div class="equipe__card"></div>
+      <div class="equipe__presse">
+        <p>
+          « On a passé une journée avec Faruk et Aymric, désinsectiseurs dans le Bas – Rhin » par Mathilde Piaud journaliste pour Pokaa.<a href="https://pokaa.fr/2021/08/06/on-a-passe-une-journee-avec-faruk-et-aymrick-desinsectiseurs-dans-le-bas-rhin/?fbclid=IwAR0Ua5tSxC6DwN_0MmcYvK-arjb3YztIzN53z_pcqbXL3LOj9hZ5qBeEQTg" target="_blank">Lire plus (s'ouvre dans une nouvelle fenêtre)</a>
+        </p>
+        <img src="https://pokaa.fr/wp-content/uploads/2021/08/abeille.jpg"  alt="image des spécialistes" class="equipe__presseImg">
+      </div>
+      <!-- 
+        Mise en place d'une fresque du type
+        https://freefrontend.com/css-hexagons/#hexagon-grids
+        <div class="fresqueDétente"></div>
+       -->
+      
+    </section>
     <!-- FIN SECTION TEAM -->
+    <!-- SECTION DEVIS -->
+    <section id="estimate">
+      <h2>Vous souhaitez obtenir un devis</h2>
+      <p>Toutes les interventions sont différentes (accessibilité, localisation, utilisation de corde, nid sous terre, etc. …) c’est pourquoi, Dard des Villes s’engage à vous communiquer un devis au prix le plus juste avant tout déplacement.</p>
+      <a href="tel:tel:+123456789" class="estimate__cta"> on s'appelle ?</a>
+    </section>
+    <!-- FIN SECTION DEVIS -->
     </main>
+
     <!-- FOOTER -->
-    <footer></footer>
+    <footer>
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <img src="Public/img/logo.png" alt="image d'une abeille dans un cercle">
+          <a href="mailto:contact@darddesvilles">contact@darddesvilles.fr</a>
+        </div>
+        <div class="footer__navigation">
+          <h4>Navigation</h4>
+          <ul>
+            <li>
+              <i></i>
+              <a href="#portfolio">Réalisation</a>
+            </li>
+            <li>
+              <i></i>
+              <a href="#commitment">Engagement</a>
+            </li>
+            <li>
+              <i></i>
+              <a href="#team">Équipe</a>
+            </li>
+            <li>
+              <i></i>
+              <a href="#estimate">Devis</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__socialNetwork">
+          <h4>Suivez-nous</h4>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p>
+          <span>© Copyright 2021 &#8211; Dard des villes® // </span>
+          <a href="https://darddesvilles.fr/accueil/mentions-legales">
+            <span class="footer__bottom-mentionLegales">Mentions légales</span>
+          </a>
+        </p>
+      </div>
+    </footer>
     <!-- FIN FOOTER -->
 
     
