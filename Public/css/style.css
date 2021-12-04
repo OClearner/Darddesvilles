@@ -1,3 +1,5 @@
+/*    =--- GENERALITES ---= */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,8 +7,93 @@
   }
 :root {
     --bg-color : #eee;
+    /* --black : #e6e6e6; */
+    /* couleurs provenant du logo */
+    --red : #d02928;
+    --yellow : #f5d013;
+    --black: #010101;
+    --wings: #cce9fb;
+    /* Fin couleurs provenant du logo */
+    --white: #f1f1f1;
+}
+body {
+    font-family: "Open Sans",sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+h1,h2,h3{
+    font-family: "Jost", sans-serif;
+}
+a{
+    text-decoration: none;
 }
 
+
+/*     -------- = HEADER = ------  */
 header{
-    background-color: var(--bg-color);
+    background-color: var(--wings);
+}
+.header__logo{
+    display: flex;
+    justify-content: center;
+}
+.header__img{
+    width: 250px;
+}
+.header__nav{
+    display: none;
+}
+
+
+/*     -------- = HERO SECTION = ------  */
+.hero{
+    background-color: var(--wings);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    color: var(--red);
+}
+.hero h2{
+    text-align: center;
+    color: var(--black);
+    margin: 1em;
+}
+.hero__imgWrapper{
+    display: none;
+}
+.hero__cta{
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 28px 11px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px 0 20px 0px;
+    color: #fff;
+    background: #f34886;
+
+}
+.hero__cta:hover{
+    background: transparent;
+    border: 1px solid #f34886;
+}
+
+/* -------- = MAIN = ---------- */
+
+#portfolio{
+    background-color: #e7f0f6;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+#portfolio h2{
+    text-align: center;
+    padding: 1em;
 }
