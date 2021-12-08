@@ -68,7 +68,7 @@ h1{
 .hero__cta{
     font-family: "Jost", sans-serif;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.25rem;
     letter-spacing: 1px;
     display: inline-block;
     padding: 10px 28px 11px 28px;
@@ -221,28 +221,81 @@ h1{
     align-items: center;
     background: #f4f6f8;
 }
+#team{
+    padding-bottom: 3em;
+}
+.equipe__presse{
+    display: none;
+}
+#team h2{
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+.equipe__card{
+    display: flex;
+}
+.equipe__picImg{
+    width: 100%;
+    padding: 1em;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.equipe__card-front{
+    width: 100%;
+}
+.equipe__contact{
+    display: block;
+    padding-bottom: 2em;
+}
+.equipe__contact a{
+    display: inline-block;
+    color: #f34886;
+}
+.equipe__member_info{
+    padding-left: 1.5em;
+}
+.equipe__member_info h4{
+    margin: 0;
+    color: var(--black);
+}
 
+
+/* CODE POUR VERSION TABLETTE ET DESKTOP
 #team{
     position: relative;
+    padding-bottom: 20em;
+}
+#team h2{
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 2em;
+    color: #fff; 
 }
 .equipe__wrapper{
     display: flex;
     justify-content: space-between;
 }
+.equipe__picImg{
+    width: auto;
+}
 .equipe__card{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 30%;
+    height: 63%;
     transform-style: preserve-3d;
     transition : all 0.5s ease;
-    background: yellow;
+    background: yellow; 
+}
+.equipe__card:hover{
+    transform: rotateY(180deg);
 }
 .equipe__card-front{
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background: #1a1a1a;
+    background: #1a1a1a; 
     color: #f5d013;
 }
 .equipe__card-back{
@@ -250,9 +303,8 @@ h1{
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background: #1a1a1a;
+    background: #1a1a1a; 
     color: #f5d013;
-    transform: rotateY(180deg);
 }
 .equipe__presse{
     display: none;
@@ -260,17 +312,22 @@ h1{
 .equipe__presse img{
     width: 150px;
     height: 150px;
+} */
+
+/* ------------- = @Section DEVIS = ----------------- */
+#estimate{
+    padding-bottom: 5em;
 }
 #estimate p{
     text-align: center;
-}
+    padding: 1.5em;
 
-/* ------------- = @Section DEVIS = ----------------- */
+}
 
 .estimate__cta{
     font-family: "Jost", sans-serif;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.25rem;
     letter-spacing: 1px;
     display: inline-block;
     padding: 10px 28px 11px 28px;
