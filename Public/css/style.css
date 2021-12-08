@@ -79,7 +79,7 @@ h1{
     background: #f34886;
 
 }
-.hero__cta:hover{
+.hero__cta:active:hover{
     background: transparent;
     border: 1px solid #f34886;
 }
@@ -141,9 +141,15 @@ h1{
     background: rgba(0, 0, 0, .45);
     transition: all .5s ease-out;
 }
-.realisation__box ::after {
+.realisation__box:active::after {
     background: rgba(0, 0, 0, 0);
   }
+.realisation__box.box1{
+    transform: translate(0%, 100%);
+}
+.realisation__box.box3{
+    transform: translate(0%, -100%);
+}
 /*   
     A mettre en mode tablette et desktop
    Positioning of the prisms at Realisation section
@@ -318,6 +324,10 @@ h1{
 #estimate{
     padding-bottom: 5em;
 }
+#estimate h2{
+    text-align: center;
+    width: 90%;
+}
 #estimate p{
     text-align: center;
     padding: 1.5em;
@@ -337,6 +347,12 @@ h1{
     color: #fff;
     background: #f34886;
 }
+.estimate__cta:active:hover{
+    background: #fff;
+    border: 1px solid #f34886;
+    color: var(--yellow);
+    box-shadow: -1px 2px 8px 3px #f34886;
+}
 
 
 
@@ -345,5 +361,30 @@ h1{
 
 footer {
     background-color: var(--wings);
-
+}
+footer a{
+    color: #f34886;
+}
+.footer__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.footer__logo{
+    padding-top: 3em;
+    text-align: center;
+}
+.footer__navigation{
+    padding: 2em;
+}
+.footer__navigation ul{
+    padding: 1em;
+}
+.footer__socialNetwork{
+    padding: 2em;
+    margin-top: -3em;
+}
+.footer__bottom{
+    background: #9fd1f0;
+    padding: 5px;
+    font-size: 15px;
 }
