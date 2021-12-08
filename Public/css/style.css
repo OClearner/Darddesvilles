@@ -210,10 +210,6 @@ h1{
 .engagement__card h3, .engagement__card p{
     text-align: center;
 }
-.equipe__presse img{
-    width: 150px;
-    height: 150px;
-}
 
 
 /* ------------- = @Section TEAM = ----------------- */
@@ -227,10 +223,43 @@ h1{
 }
 
 #team{
-    
+    position: relative;
+}
+.equipe__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.equipe__card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition : all 0.5s ease;
+    background: yellow;
+}
+.equipe__card-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #1a1a1a;
+    color: #f5d013;
+}
+.equipe__card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #1a1a1a;
+    color: #f5d013;
+    transform: rotateY(180deg);
 }
 .equipe__presse{
     display: none;
+}
+.equipe__presse img{
+    width: 150px;
+    height: 150px;
 }
 #estimate p{
     text-align: center;
