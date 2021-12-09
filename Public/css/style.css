@@ -376,9 +376,15 @@ footer a{
     display: flex;
     flex-direction: column;
 }
-.footer__logo{
-    padding-top: 3em;
+/* .footer__logo{
     text-align: center;
+} */
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
 }
 .footer__navigation{
     padding: 2em;
@@ -400,6 +406,17 @@ footer a{
 
 /*  ------------------------------------------------------ = MEDIA QUERIES  =-----------------------------  */
 
+/* Mq Pour les écrans dont la largeur est supérieur à 370px*/
+@media screen and (min-width: 370px){
+    body{
+        background-color: violet;
+        
+    }
+    .equipe__contact a{
+        
+        width: 100%; /*permet aux éléments ancre tel et mail de rester l'un sous l'autre */
+    }
+}
 /* Mq Pour les écrans dont la largeur est supérieur à 600px*/
 @media screen and (min-width: 600px){
 
