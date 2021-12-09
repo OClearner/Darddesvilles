@@ -150,6 +150,9 @@ h1{
 .realisation__box.box3{
     transform: translate(0%, -100%);
 }
+.realisation__box.box4,.realisation__box.box4,.realisation__box.box4,.realisation__box.box4{
+    display: none;
+}
 /*   
     A mettre en mode tablette et desktop
    Positioning of the prisms at Realisation section
@@ -213,9 +216,12 @@ h1{
     width: 150px;
     height: 150px;
 }
-.engagement__card h3, .engagement__card p{
+.engagement__card h3, .engagement__card-content p{
     text-align: center;
 }
+/* .engagement__card p{
+    width: 50%;
+} */
 
 
 /* ------------- = @Section TEAM = ----------------- */
@@ -352,7 +358,7 @@ h1{
     border: 1px solid #f34886;
     color: var(--yellow);
     box-shadow: -1px 2px 8px 3px #f34886;
-}
+} 
 
 
 
@@ -362,6 +368,7 @@ h1{
 footer {
     background-color: var(--wings);
 }
+
 footer a{
     color: #f34886;
 }
@@ -386,5 +393,14 @@ footer a{
 .footer__bottom{
     background: #9fd1f0;
     padding: 5px;
-    font-size: 15px;
+    font-size: 12px;
+} 
+
+
+
+/*  ------------------------------------------------------ = MEDIA QUERIES  =-----------------------------  */
+
+/* Mq Pour les écrans dont la largeur est supérieur à 600px*/
+@media screen and (min-width: 600px){
+
 }
