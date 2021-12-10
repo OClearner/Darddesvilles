@@ -493,6 +493,27 @@ footer a{
 }
 /* Mq Pour les écrans dont la largeur est supérieur à 600px*/
 @media screen and (min-width: 600px){
+    .footer__wrapper{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .footer__img{
+        width: 100px;
+    }
+    .footer__socialNetwork{
+        margin-top: 0;
+    }
+    .footer__socialNetwork h4{
+        padding-bottom: 1em;
+    }
+    .footer__logo{
+        padding-top: 1.5em;
+    }
+    .footer__logo a{
+        padding-top: 1em;
+    }
+
 
 }
 /* Mq Pour les écrans dont la largeur est supérieur à 7680px*/
