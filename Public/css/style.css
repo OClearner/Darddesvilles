@@ -52,6 +52,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3em;
 }
 
 /* Animation dans le h1 des différents nids de = à améliorer côté ui/ux */
@@ -117,7 +118,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    padding-bottom: 20em;
+    padding-bottom: 23em;
 }
 #portfolio h2{
     text-align: center;
@@ -213,7 +214,7 @@ h1{
 }
 #commitment h2{
     text-align: center;
-    margin: 0.5em;
+    margin: 2em 0.5em 1em 0.5em;
 }
 .engagement__card{
     display: flex;
@@ -263,15 +264,18 @@ h1{
 }
 #team h2{
     text-align: center;
-    padding: 1em;
-    margin-bottom: 2em;
+    /* padding: 1em; */
+    margin: 2em 0.5em 1em 0.5em;
+
+    /* margin-bottom: 2em; */
 }
 .equipe__card{
     display: flex;
 }
 .equipe__picImg{
     width: 100%;
-    padding: 1em;
+    /* padding: 1em; */
+    padding: 3em 3em 0 3em;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -287,7 +291,7 @@ h1{
     color: #f34886;
 }
 .equipe__member_info{
-    padding-left: 1.5em;
+    padding-left: 3em;
 }
 .equipe__member_info h4{
     margin: 0;
@@ -430,10 +434,6 @@ footer a{
 
 /* Mq Pour les écrans dont la largeur est supérieur à 370px*/
 @media screen and (min-width: 370px){
-    body{
-        background-color: violet;
-        
-    }
     .equipe__contact a{
         
         width: 100%; /*permet aux éléments ancre tel et mail de rester l'un sous l'autre */
@@ -445,8 +445,57 @@ footer a{
         text-align: center;
     } 
 
+
+}
+/* Mq Pour les écrans dont la largeur est supérieur à 500px*/
+@media screen and (min-width: 500px){
+    .equipe__card-front{
+        margin-bottom: 2em;
+    }
+    .equipe__picImg{
+        width: 250px;
+        transform-origin: 110px -134px;
+        transform: rotate(-10deg);
+    }
+    .equipe__picImg:hover{
+        transform: none;
+        transition: all .5s ease-out;
+
+    }
+    .equipe__card-front{
+        display: flex;
+        background: #e7f0f6;
+    }
+    .equipe__member_info{
+        padding-left: 0;
+        margin-top: 6em;
+        position: relative;
+        z-index: 1;
+    }
+    .equipe__member_info h4{
+        margin-bottom: 3em;
+    }
+    .equipe__cardAymeric{
+        margin-top: 2em;
+    }
+    .equipe__picAymeric{
+        order: 2;
+    }
+    .equipe__picImgAymeric{
+        transform-origin: 110px -134px;
+        transform: rotate(10deg);
+    }
+    .equipe__member_infoAymeric{
+        order: 1;
+        padding-left: 3em;
+
+    }
 }
 /* Mq Pour les écrans dont la largeur est supérieur à 600px*/
 @media screen and (min-width: 600px){
+
+}
+/* Mq Pour les écrans dont la largeur est supérieur à 7680px*/
+@media screen and (min-width: 7680px){
 
 }
