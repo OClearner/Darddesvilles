@@ -53,6 +53,28 @@ header{
     justify-content: center;
     align-items: center;
 }
+
+/* Animation dans le h1 des différents nids de = à améliorer côté ui/ux */
+.hero span{
+    position: relative;
+}
+.hero span::before{
+    content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 0, 0.801);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.hero span:hover::before{
+    visibility: visible;
+  height: 28px;
+}
+/* FIN Animation dans le h1 des différents nids de = à améliorer côté ui/ux */
+
 h1{
     text-align: center;
     color: var(--red);
@@ -416,6 +438,13 @@ footer a{
         
         width: 100%; /*permet aux éléments ancre tel et mail de rester l'un sous l'autre */
     }
+}
+/* Mq Pour les écrans dont la largeur est supérieur à 400px*/
+@media screen and (min-width: 400px){
+    .footer__bottom{
+        text-align: center;
+    } 
+
 }
 /* Mq Pour les écrans dont la largeur est supérieur à 600px*/
 @media screen and (min-width: 600px){
