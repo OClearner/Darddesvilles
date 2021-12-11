@@ -27,6 +27,9 @@ body {
 h1,h2,h3{
     font-family: "Jost", sans-serif;
 }
+h2{
+    text-transform: uppercase;
+}
 a{
     text-decoration: none;
 }
@@ -39,13 +42,29 @@ header{
 .header__logo{
     display: flex;
     justify-content: center;
+    position: relative;
+}
+.hero__darddesvilles{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #f34886;
+    text-shadow: 1px 1px 1px #f34886 ;
+    text-shadow: 3px 3px 0px #f2edef;
+    padding: 1em 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
 }
 .header__img{
     width: 250px;
 }
-.header__nav{
+.header__nav, .header__navCall{
     display: none;
 }
+
 
 
 /*     -------- = HERO SECTION = ------  */
@@ -80,9 +99,10 @@ header{
 /* FIN Animation dans le h1 des différents nids de = à améliorer côté ui/ux */
 
 h1{
-    text-align: center;
+    text-align: left;
     color: var(--red);
 }
+
 .hero h2{
     text-align: center;
     color: var(--black);
@@ -452,6 +472,10 @@ footer a{
 }
 /* Mq Pour les écrans dont la largeur est supérieur à 500px*/
 @media screen and (min-width: 500px){
+
+        /*********** 
+                TEAM SECTION 
+                    **************/
     .equipe__card-front{
         margin-bottom: 2em;
     }
@@ -469,6 +493,7 @@ footer a{
     .equipe__card-front{
         display: flex;
         background: #e7f0f6;
+        margin-bottom: 5em;
     }
     .equipe__member_info{
         padding-left: 0;
@@ -523,6 +548,10 @@ footer a{
 /* Mq Pour les écrans dont la largeur est supérieur à 768px*/
 @media screen and (min-width: 768px){
 
+
+    /*********** 
+                HEADER SECTION 
+                    **************/
     header{
         display: flex;
         justify-content: space-around;
@@ -577,7 +606,33 @@ footer a{
     .header__navCall{
         align-self: center;
     }
+    #hero {
+        padding: 6.5em 0;
+    }
 
+    /*********** 
+            ESPACEMENT UTILES POUR QUE LES LIENS DE NAVIGATION PERMETTENT DE 
+            TOMBER DIRECTEMENT SUR LE H2 DE CHAQUE SECTION MODE TABLETTE !!!
+                    **************/
+    #portfolio{
+        padding: 6em 0em 28em;
+        overflow: hidden;
+    }
+    #portfolio h2{
+        /* text-transform: uppercase; */
+    }
+    #commitment {
+        padding: 5em 0;
+    }
+    #team {
+        padding: 5em 0;
+    }
+    #team h2{
+        margin: 2em 0.5em 3em 0.5em;
+    }
+    #estimate h2{
+        padding-top: 6em;
+    }
 
 
     /* CODE POUR VERSION TABLETTE ET DESKTOP
