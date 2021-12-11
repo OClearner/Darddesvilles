@@ -252,20 +252,20 @@ h1{
 
 /* ------------- = @Section TEAM = ----------------- */
 
-#team,#estimate {
+.equipe,#estimate {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #f4f6f8;
 }
-#team{
+.equipe{
     padding-bottom: 3em;
 }
 .equipe__presse{
     display: none;
 }
-#team h2{
+.equipe h2{
     text-align: center;
     /* padding: 1em; */
     margin: 2em 0.5em 1em 0.5em;
@@ -303,11 +303,11 @@ h1{
 
 
 /* CODE POUR VERSION TABLETTE ET DESKTOP
-#team{
+.equipe{
     position: relative;
     padding-bottom: 20em;
 }
-#team h2{
+.equipe h2{
     text-align: center;
     padding: 1em;
     margin-bottom: 2em;
@@ -528,6 +528,7 @@ footer a{
         justify-content: space-around;
         position: sticky;
         top: 0;
+        z-index: 67;
     }
     .header__logo{
         /* width: 150px;
@@ -549,6 +550,7 @@ footer a{
     }
     .header__links a{
         color: var(--black);
+        font-weight: bold;
     }
     .header__links a:hover{
         color: #f34886;
@@ -559,7 +561,7 @@ footer a{
         font-size: 1.25rem;
         letter-spacing: 1px;
         display: inline-block;
-        padding: 10px 11px 11px 11px;
+        padding: 5px 15px;
         border-radius: 50px;
         transition: 0.5s;
         margin: 10px 0 20px 0px;
@@ -579,11 +581,11 @@ footer a{
 
 
     /* CODE POUR VERSION TABLETTE ET DESKTOP
-#team{
+.equipe{
     position: relative;
     padding-bottom: 20em;
 }
-#team h2{
+.equipe h2{
     text-align: center;
     padding: 1em;
     margin-bottom: 2em;
