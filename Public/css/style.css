@@ -16,6 +16,9 @@
     /* Fin couleurs provenant du logo */
     --white: #f1f1f1;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Open Sans",sans-serif;
     font-size: 1rem;
@@ -456,6 +459,7 @@ footer a{
         width: 250px;
         transform-origin: 110px -134px;
         transform: rotate(-10deg);
+        filter: brightness(0.7);
     }
     .equipe__picImg:hover{
         transform: none;
@@ -487,7 +491,7 @@ footer a{
     }
     .equipe__member_infoAymeric{
         order: 1;
-        padding-left: 3em;
+        left: 110px;
 
     }
 }
@@ -516,7 +520,122 @@ footer a{
 
 
 }
-/* Mq Pour les écrans dont la largeur est supérieur à 7680px*/
-@media screen and (min-width: 7680px){
+/* Mq Pour les écrans dont la largeur est supérieur à 768px*/
+@media screen and (min-width: 768px){
+
+    header{
+        display: flex;
+        justify-content: space-around;
+        position: sticky;
+        top: 0;
+    }
+    .header__logo{
+        /* width: 150px;
+        justify-content: flex-start; */
+    }
+    .header__img{
+        width: 100px;
+    }
+    .header__nav{
+        display: flex;
+    }
+    .header__links{
+        display: flex;
+        align-items: center;
+    }
+    .header__links li{
+        padding: 0 0.5em;
+        list-style: none;
+    }
+    .header__links a{
+        color: var(--black);
+    }
+    .header__links a:hover{
+        color: #f34886;
+    }
+    .header__cta{
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 10px 11px 11px 11px;
+        border-radius: 50px;
+        transition: 0.5s;
+        margin: 10px 0 20px 0px;
+        color: #fff;
+        background: transparent;
+        border: 1px solid #f34886;
+
+    }
+    .header__cta:hover{
+        background-color: #f34886;
+        border-color: white;
+    }
+    .header__navCall{
+        align-self: center;
+    }
+
+
+
+    /* CODE POUR VERSION TABLETTE ET DESKTOP
+#team{
+    position: relative;
+    padding-bottom: 20em;
+}
+#team h2{
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 2em;
+    color: #fff; 
+}
+.equipe__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.equipe__picImg{
+    width: auto;
+}
+.equipe__card{
+    position: absolute;
+    width: 30%;
+    height: 63%;
+    transform-style: preserve-3d;
+    transition : all 0.5s ease;
+    background: yellow; 
+}
+.equipe__card:hover{
+    transform: rotateY(180deg);
+}
+.equipe__card-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #1a1a1a; 
+    color: #f5d013;
+}
+.equipe__card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #1a1a1a; 
+    color: #f5d013;
+}
+.equipe__presse{
+    display: none;
+}
+.equipe__presse img{
+    width: 150px;
+    height: 150px;
+} */
+}
+/* Mq Pour les écrans dont la largeur est supérieur à 800px*/
+@media screen and (min-width: 800px){
+
+}
+/* Mq Pour les écrans dont la largeur est supérieur à 1024px*/
+@media screen and (min-width: 1024px){
 
 }
