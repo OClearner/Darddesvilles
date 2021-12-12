@@ -712,6 +712,21 @@ footer a{
     } 
     
 
+    /*********** 
+            ENGAGEMENT SECTION 
+                    **************/
+    .engagement__cardWrapper{
+        display: flex;
+        justify-content: space-around;
+    }
+    .engagement__card:hover{
+        filter: invert(1);
+    }
+
+
+    /*********** 
+            TEAM SECTION 
+                    **************/
 /* 
     .equipe{
         position: relative;
