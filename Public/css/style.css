@@ -1,4 +1,6 @@
-/*    =--- GENERALITES ---= */
+/*    =--- 
+     GENERALITES 
+--------------= */
 
 *, ::before, ::after{
     box-sizing: border-box;
@@ -7,13 +9,14 @@
   }
 :root {
     --bg-color : #eee;
-    /* --black : #e6e6e6; */
+    
     /* couleurs provenant du logo */
     --red : #d02928;
     --yellow : #f5d013;
     --black: #010101;
     --wings: #cce9fb;
     /* Fin couleurs provenant du logo */
+
     --white: #f1f1f1;
 }
 html {
@@ -35,7 +38,8 @@ a{
 }
 
 
-/*     -------- = HEADER = ------  */
+/*     -------- 
+---------------= HEADER = ------  */
 header{
     background-color: var(--wings);
 }
@@ -67,7 +71,8 @@ header{
 
 
 
-/*     -------- = HERO SECTION = ------  */
+/*     -------- 
+---------------= HERO SECTION = ------  */
 .hero{
     background-color: var(--wings);
     display: flex;
@@ -77,12 +82,17 @@ header{
     padding-bottom: 3em;
     text-align: center;
 }
+/* .hero__movie{
+    display: none;
+} */
+.hero__movie, .hero__imgWrapper, .hero__guepe img, .hero__frelon img, .hero__abeille img{
+    display: none;
+}
 
-/* Animation dans le h1 des différents nids de = à améliorer côté ui/ux */
-.hero span{
+.hero__h1-yellow {
     position: relative;
 }
-.hero span::before{
+.hero__h1-yellow::before {
     content: "";
   position: absolute;
   width: 100%;
@@ -93,19 +103,34 @@ header{
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
-.hero span:hover::before{
+.hero__h1-yellow:hover::before{
     visibility: visible;
-  height: 28px;
+    height: 28px;
 }
+/* .hero span::before{
+    content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 0, 0.801);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+} */
+/* .hero span:hover::before{
+  visibility: visible;
+  height: 28px;
+} */
 /* FIN Animation dans le h1 des différents nids de = à améliorer côté ui/ux */
 
 h1{
-    padding: 2em 0;
-    /* text-align: left; */
+    padding: 0.5em 0;
     color: var(--red);
 }
 
-.hero h2{
+.hero__h2{
+    text-transform: none;
     text-align: center;
     color: var(--black);
     margin: 1em;
@@ -113,9 +138,9 @@ h1{
 .hero p {
     padding-bottom: 2em;
 }
-.hero__imgWrapper{
+/* .hero__imgWrapper{
     display: none;
-}
+} */
 .hero__cta{
     font-family: "Jost", sans-serif;
     font-weight: 500;
@@ -130,12 +155,14 @@ h1{
     background: #f34886;
 
 }
-.hero__cta:active:hover{
+.hero__cta:hover{
     background: transparent;
     border: 1px solid #f34886;
 }
 
-/* -------- = MAIN = ---------- */
+/* -------- = 
+        MAIN = ----------
+----------------------- */
 
 /* ------------- = @Section REALISATION = ----------------- */
 
@@ -204,31 +231,6 @@ h1{
 .realisation__box.box4,.realisation__box.box4,.realisation__box.box4,.realisation__box.box4{
     display: none;
 }
-/*   
-    A mettre en mode tablette et desktop
-   Positioning of the prisms at Realisation section
-.realisation__box.box1{
-    transform: translate(50%, -75%);
-}
-.realisation__box.box2{
-    transform: translate(-50%, -75%);
-}
-.realisation__box.box3{
-    transform: translate(-100%, 0%);
-}
-.realisation__box.box4{
-    transform: translate(0%, 0%);
-}
-.realisation__box.box5{
-    transform: translate(100%, 0%);
-}
-.realisation__box.box6{
-    transform: translate(50%, 75%);
-}
-.realisation__box.box7{
-    transform: translate(-50%, 75%);
-} */
-
 
 /* ------------- = @Section ENGAGEMENT = ----------------- */
 #commitment{
@@ -270,9 +272,6 @@ h1{
 .engagement__card h3, .engagement__card-content p{
     text-align: center;
 }
-/* .engagement__card p{
-    width: 50%;
-} */
 
 
 /* ------------- = @Section TEAM = ----------------- */
@@ -292,17 +291,13 @@ h1{
 }
 .equipe h2{
     text-align: center;
-    /* padding: 1em; */
     margin: 2em 0.5em 1em 0.5em;
-
-    /* margin-bottom: 2em; */
 }
 .equipe__card{
     display: flex;
 }
 .equipe__picImg{
     width: 100%;
-    /* padding: 1em; */
     padding: 3em 3em 0 3em;
     object-fit: cover;
     border-radius: 5px;
@@ -327,60 +322,8 @@ h1{
 }
 
 
-/* CODE POUR VERSION TABLETTE ET DESKTOP
-.equipe{
-    position: relative;
-    padding-bottom: 20em;
-}
-.equipe h2{
-    text-align: center;
-    padding: 1em;
-    margin-bottom: 2em;
-    color: #fff; 
-}
-.equipe__wrapper{
-    display: flex;
-    justify-content: space-between;
-}
-.equipe__picImg{
-    width: auto;
-}
-.equipe__card{
-    position: absolute;
-    width: 30%;
-    height: 63%;
-    transform-style: preserve-3d;
-    transition : all 0.5s ease;
-    background: yellow; 
-}
-.equipe__card:hover{
-    transform: rotateY(180deg);
-}
-.equipe__card-front{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    background: #1a1a1a; 
-    color: #f5d013;
-}
-.equipe__card-back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    background: #1a1a1a; 
-    color: #f5d013;
-}
-.equipe__presse{
-    display: none;
-}
-.equipe__presse img{
-    width: 150px;
-    height: 150px;
-} */
-
 /* ------------- = @Section DEVIS = ----------------- */
+
 #estimate{
     padding-bottom: 5em;
     /*tentative de remplir esthetiquement 
@@ -410,9 +353,8 @@ h1{
     color: #fff;
     background: #f34886;
 }
-.estimate__cta:active:hover{
+.estimate__cta:hover{
     background: #fff;
-    border: 1px solid #f34886;
     color: var(--yellow);
     box-shadow: -1px 2px 8px 3px #f34886;
 } 
@@ -433,9 +375,6 @@ footer a{
     display: flex;
     flex-direction: column;
 }
-/* .footer__logo{
-    text-align: center;
-} */
 .footer__logo {
     display: flex;
     flex-direction: column;
@@ -461,10 +400,14 @@ footer a{
 
 
 
-/*  ------------------------------------------------------ = MEDIA QUERIES  =-----------------------------  */
+/*  ------------------------------------------------------
+------------------------ = MEDIA QUERIES  =---------------
+------------------------------------------------------  */
 
 /* Mq Pour les écrans dont la largeur est supérieur à 370px*/
 @media screen and (min-width: 370px){
+
+    /* ------------= section  TEAM 370px =------------- */
     .equipe__contact a{
         
         width: 100%; /*permet aux éléments ancre tel et mail de rester l'un sous l'autre */
@@ -472,6 +415,8 @@ footer a{
 }
 /* Mq Pour les écrans dont la largeur est supérieur à 400px*/
 @media screen and (min-width: 400px){
+
+    /* -----------= section FOOTER 370px =--------------- */
     .footer__bottom{
         text-align: center;
     } 
@@ -482,7 +427,7 @@ footer a{
 @media screen and (min-width: 500px){
 
         /*********** 
-                TEAM SECTION 
+                TEAM SECTION 500px
                     **************/
     .equipe__card-front{
         margin-bottom: 2em;
@@ -496,7 +441,6 @@ footer a{
     .equipe__picImg:hover{
         transform: none;
         transition: all .5s ease-out;
-
     }
     .equipe__card-front{
         display: flex;
@@ -530,6 +474,8 @@ footer a{
 }
 /* Mq Pour les écrans dont la largeur est supérieur à 600px*/
 @media screen and (min-width: 600px){
+
+    /* --------------= FOOTER SECTION =------- */
     .footer__wrapper{
         flex-direction: row;
         justify-content: space-around;
@@ -558,12 +504,13 @@ footer a{
 
 
     /*********** 
-                HEADER SECTION 
-                    **************/
+                HEADER SECTION 768px
+                    ****************/
+
     header{
         display: flex;
         justify-content: space-around;
-        /* position: sticky; */
+        /* position: sticky;  */
         top: 0;
         z-index: 67;
     }
@@ -618,16 +565,147 @@ footer a{
     /*********** 
                 HERO SECTION 768px
                     **************/
+
     .hero__darddesvilles{
         top: 84%;
         left: -7%;
         transform: none;
         padding: 0;
     }
+    .hero__h1-yellow:hover::before{
+        visibility: hidden;
+    }
+    .hero__headContent{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 3em;
+    }
+    .hero__headTitles{
+        text-align: left;
+        padding-left: 0.5em;
+    }
+    .hero__h2{
+        margin: 0;
+        text-align: left;
+        margin-top: 4.5em;
+        width: 80%;
+    }
     
-    /*********** 
-    ESPACEMENT UTILES POUR QUE LES LIENS DE NAVIGATION PERMETTENT DE 
-    TOMBER DIRECTEMENT SUR LE H2 DE CHAQUE SECTION MODE TABLETTE !!!
+    /* .hero__title1{
+        position: relative;
+        padding-right: 7px;
+    }
+    .hero__title1::after{
+        content: ":";
+        position: absolute;
+        top: 0;
+        left: 128px;
+    } 
+    .hero__title2{
+        display: none;
+    }*/
+    .hero__frelon{
+        margin: 2em 0;
+    }
+    .hero__movie{
+        display: flex;
+        padding-right: 1em;
+
+    }
+
+
+    /* -----------768px ----= Apparition des images au sruvol des H1 
+    =--------------------------------------------------------*/
+
+    .hero__guepe{
+        position: relative;
+    }
+    
+    .hero__guepe:hover img{
+        display: block;
+    }
+    .hero__guepeImg{
+        position: absolute;
+        top: -47px;
+        right: 57px;
+        width: 165px;
+        transform: rotate(35deg);
+    }
+    .hero__frelon{
+        position: relative;
+        margin: 3em 0;
+    }
+    .hero__frelon:hover img{
+        display: block;
+    }
+    .hero__frelonImg{
+        position: absolute;
+        top: -55px;
+        right: 64px;
+        width: 165px;
+        filter: opacity(0.5);
+    }
+    .hero__abeille{
+        position: relative;
+    }
+    .hero__abeille:hover img{
+        display: block;
+    }
+    .hero__abeilleImg{
+        position: absolute;
+        top: 43px;
+        left: 0;
+        width: 165px;
+        filter: drop-shadow(2px 4px 6px black)
+    }
+
+    /* --------------768px----------= Fin Apparition des images au sruvol 
+    =------------------------------------------------------------------*/
+
+    .hero__imgWrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero__imgWrapper p{
+        text-align: justify;
+        padding-left: 0.5em;
+    }
+    .hero__sonObjectif{
+        font-weight: bold;
+    }
+    .hero__figureWrapper{
+        display: none;
+        /* display: flex;
+        justify-content: space-around; */
+    }
+    /* A Utiliser en mode Desktop si besoin. Concerne les Cadres pour Les Hyménoptères
+    .hero__figure{
+        border: thin #c0c0c0 solid;
+        display: flex;
+        flex-flow: column;
+        padding: 5px;
+        max-width: 220px;
+        margin: auto;
+    }
+    .hero__figure img{
+        max-width: 220px;
+        max-height: 150px;
+    }
+    figcaption {
+        background-color: #222;
+        color: #fff;
+        font: italic smaller sans-serif;
+        padding: 3px;
+        text-align: center;
+    } */
+    video {
+        width: 300px;
+        height: 500px;
+    }
+
+
+    /*********** 768px
+    FIN    ESPACEMENT 
     **************/
     #hero {
         padding: 6.5em 0;
@@ -652,8 +730,15 @@ footer a{
         padding-top: 6em;
     }
 
+    /*********** 768px FIN
+    ESPACEMENT UTILES POUR QUE LES LIENS DE NAVIGATION PERMETTENT DE 
+    TOMBER DIRECTEMENT SUR LE H2 DE CHAQUE SECTION MODE TABLETTE !!!
+    **************/
+
+
+
     /*********** 
-            REALISATION SECTION 
+            REALISATION SECTION 768px
                     **************/
                     
 
@@ -662,7 +747,9 @@ footer a{
         width: 90%;
         height: 90%;
     } 
-    /* Customiser le centrage des images dans les prismes pour mettre en avant le travail effecté*/
+    /* ----------------768px-------=
+     Customiser le centrage des images dans les prismes pour mettre en avant le travail effecté
+     =-----------------------------------------------------------------------------------------*/
 
     
     .realisation__box.box2 img{
@@ -686,7 +773,9 @@ footer a{
         transform-origin: 0% 0%;
     }
 
-    /* Fin Customisation */
+    /****************
+    -----768PX---= Fin Customisation=-----
+    -------------------------------- */
 
     .realisation__box.box1{
         transform: translate(50%, -75%);
@@ -713,8 +802,9 @@ footer a{
     
 
     /*********** 
-            ENGAGEMENT SECTION 
+            ENGAGEMENT SECTION 768px
                     **************/
+
     .engagement__cardWrapper{
         display: flex;
         justify-content: space-around;
@@ -725,7 +815,7 @@ footer a{
 
 
     /*********** 
-            TEAM SECTION 
+            TEAM SECTION 768px
                     **************/
 /* 
     .equipe{
