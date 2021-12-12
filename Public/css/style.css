@@ -616,7 +616,7 @@ footer a{
     }
 
     /*********** 
-                HERO SECTION 
+                HERO SECTION 768px
                     **************/
     .hero__darddesvilles{
         top: 84%;
@@ -788,4 +788,5 @@ footer a{
 /* Mq Pour les écrans dont la largeur est supérieur à 1024px*/
 @media screen and (min-width: 1024px){
 
+}
 }
