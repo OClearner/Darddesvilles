@@ -54,7 +54,7 @@ header{
     padding: 1em 0;
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -40%);
 }
@@ -75,6 +75,7 @@ header{
     justify-content: center;
     align-items: center;
     padding-bottom: 3em;
+    text-align: center;
 }
 
 /* Animation dans le h1 des différents nids de = à améliorer côté ui/ux */
@@ -99,7 +100,8 @@ header{
 /* FIN Animation dans le h1 des différents nids de = à améliorer côté ui/ux */
 
 h1{
-    text-align: left;
+    padding: 2em 0;
+    /* text-align: left; */
     color: var(--red);
 }
 
@@ -107,6 +109,9 @@ h1{
     text-align: center;
     color: var(--black);
     margin: 1em;
+}
+.hero p {
+    padding-bottom: 2em;
 }
 .hero__imgWrapper{
     display: none;
@@ -378,6 +383,9 @@ h1{
 /* ------------- = @Section DEVIS = ----------------- */
 #estimate{
     padding-bottom: 5em;
+    /*tentative de remplir esthetiquement 
+     background: url("../img/picture_maybe/the-hive-335984_1920.jpg");
+    background-position: center; */
 }
 #estimate h2{
     text-align: center;
@@ -555,16 +563,13 @@ footer a{
     header{
         display: flex;
         justify-content: space-around;
-        position: sticky;
+        /* position: sticky; */
         top: 0;
         z-index: 67;
     }
-    .header__logo{
-        /* width: 150px;
-        justify-content: flex-start; */
-    }
+
     .header__img{
-        width: 100px;
+        width: 130px;
     }
     .header__nav{
         display: flex;
@@ -583,6 +588,9 @@ footer a{
     }
     .header__links a:hover{
         color: #f34886;
+    }
+    .header__navCall{
+        display: inline-block;
     }
     .header__cta{
         font-family: "Jost", sans-serif;
@@ -606,14 +614,24 @@ footer a{
     .header__navCall{
         align-self: center;
     }
+
+    /*********** 
+                HERO SECTION 
+                    **************/
+    .hero__darddesvilles{
+        top: 84%;
+        left: -7%;
+        transform: none;
+        padding: 0;
+    }
+    
+    /*********** 
+    ESPACEMENT UTILES POUR QUE LES LIENS DE NAVIGATION PERMETTENT DE 
+    TOMBER DIRECTEMENT SUR LE H2 DE CHAQUE SECTION MODE TABLETTE !!!
+    **************/
     #hero {
         padding: 6.5em 0;
     }
-
-    /*********** 
-            ESPACEMENT UTILES POUR QUE LES LIENS DE NAVIGATION PERMETTENT DE 
-            TOMBER DIRECTEMENT SUR LE H2 DE CHAQUE SECTION MODE TABLETTE !!!
-                    **************/
     #portfolio{
         padding: 6em 0em 28em;
         overflow: hidden;
@@ -634,60 +652,120 @@ footer a{
         padding-top: 6em;
     }
 
+    /*********** 
+            REALISATION SECTION 
+                    **************/
+                    
 
-    /* CODE POUR VERSION TABLETTE ET DESKTOP
-.equipe{
-    position: relative;
-    padding-bottom: 20em;
-}
-.equipe h2{
-    text-align: center;
-    padding: 1em;
-    margin-bottom: 2em;
-    color: #fff; 
-}
-.equipe__wrapper{
-    display: flex;
-    justify-content: space-between;
-}
-.equipe__picImg{
-    width: auto;
-}
-.equipe__card{
-    position: absolute;
-    width: 30%;
-    height: 63%;
-    transform-style: preserve-3d;
-    transition : all 0.5s ease;
-    background: yellow; 
-}
-.equipe__card:hover{
-    transform: rotateY(180deg);
-}
-.equipe__card-front{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    background: #1a1a1a; 
-    color: #f5d013;
-}
-.equipe__card-back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    background: #1a1a1a; 
-    color: #f5d013;
-}
-.equipe__presse{
-    display: none;
-}
-.equipe__presse img{
-    width: 150px;
-    height: 150px;
-} */
-}
+
+    .realisation__box{
+        width: 90%;
+        height: 90%;
+    } 
+    /* Customiser le centrage des images dans les prismes pour mettre en avant le travail effecté*/
+
+    
+    .realisation__box.box2 img{
+        width: 250px;
+        height: 300px;
+    }
+    .realisation__box.box3 img{
+        width: 250px;
+        height: 270px;
+        object-position: bottom;/*Permet de prendre la partie de l'image que nous souhaitons mettre en avant*/
+    }
+    .realisation__box.box4 img{
+        object-position: right;
+    }
+    .realisation__box.box5 img{
+        object-position: right;
+    }
+    .realisation__box img{
+        width: 250px;
+        height: 270px;
+        transform-origin: 0% 0%;
+    }
+
+    /* Fin Customisation */
+
+    .realisation__box.box1{
+        transform: translate(50%, -75%);
+    }
+    .realisation__box.box2{
+        transform: translate(-50%, -75%);
+    }
+    .realisation__box.box3{
+        transform: translate(-100%, 0%);
+    }
+    .realisation__box.box4{
+        transform: translate(0%, 0%);
+        display: block;
+    }
+    .realisation__box.box5{
+        transform: translate(100%, 0%);
+    }
+    .realisation__box.box6{
+        transform: translate(50%, 75%);
+    }
+    .realisation__box.box7{
+        transform: translate(-50%, 75%);
+    } 
+    
+
+/* 
+    .equipe{
+        position: relative;
+        padding-bottom: 20em;
+    }
+    .equipe h2{
+        text-align: center;
+        padding: 1em;
+        margin-bottom: 2em;
+        color: #fff; 
+    }
+    .equipe__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .equipe__picImg{
+        width: auto;
+    }
+    .equipe__card{
+        position: absolute;
+        width: 30%;
+        height: 63%;
+        transform-style: preserve-3d;
+        transition : all 0.5s ease;
+        background: yellow; 
+    }
+    .equipe__card:hover{
+        transform: rotateY(180deg);
+    }
+    .equipe__card-front{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background: #1a1a1a; 
+        color: #f5d013;
+    }
+    .equipe__card-back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background: #1a1a1a; 
+        color: #f5d013;
+    }
+    .equipe__presse{
+        display: none;
+    }
+    .equipe__presse img{
+        width: 150px;
+        height: 150px;
+    }  */
+    
+
 /* Mq Pour les écrans dont la largeur est supérieur à 800px*/
 @media screen and (min-width: 800px){
 
