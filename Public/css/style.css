@@ -255,6 +255,7 @@ h1{
     margin: 1em;
     padding: 20px;
     background: #e7f0f6;
+    transition: 0.5s;
     box-shadow: 0px 3px 20px -2px #8b9ba6;
 
 }
@@ -510,7 +511,7 @@ footer a{
     header{
         display: flex;
         justify-content: space-around;
-        /* position: sticky;  */
+        position: sticky;  
         top: 0;
         z-index: 67;
     }
@@ -550,6 +551,7 @@ footer a{
         transition: 0.5s;
         margin: 10px 0 20px 0px;
         color: #fff;
+        transition: 0.5s;
         background: transparent;
         border: 1px solid #f34886;
 
@@ -626,8 +628,8 @@ footer a{
     }
     .hero__guepeImg{
         position: absolute;
-        top: -47px;
-        right: 57px;
+        top: 48px;
+        right: 20px;
         width: 165px;
         transform: rotate(35deg);
     }
@@ -705,23 +707,24 @@ footer a{
 
 
     /*********** 768px
-    FIN    ESPACEMENT 
+    ESPACEMENT UTILES POUR QUE LES LIENS DE NAVIGATION PERMETTENT DE 
+    TOMBER DIRECTEMENT SUR LE H2 DE CHAQUE SECTION MODE TABLETTE !!!
     **************/
     #hero {
-        padding: 6.5em 0;
+        padding: 8.5em 0;
     }
     #portfolio{
-        padding: 6em 0em 28em;
+        padding: 8em 0em 28em;
         overflow: hidden;
     }
     #portfolio h2{
         /* text-transform: uppercase; */
     }
     #commitment {
-        padding: 5em 0;
+        padding: 7em 0;
     }
     #team {
-        padding: 5em 0;
+        padding: 6em 0;
     }
     #team h2{
         margin: 2em 0.5em 3em 0.5em;
@@ -731,8 +734,8 @@ footer a{
     }
 
     /*********** 768px FIN
-    ESPACEMENT UTILES POUR QUE LES LIENS DE NAVIGATION PERMETTENT DE 
-    TOMBER DIRECTEMENT SUR LE H2 DE CHAQUE SECTION MODE TABLETTE !!!
+    
+    FIN    ESPACEMENT 
     **************/
 
 
@@ -868,15 +871,157 @@ footer a{
     .equipe__presse img{
         width: 150px;
         height: 150px;
-    }  */
+    }   */
     
 
 /* Mq Pour les écrans dont la largeur est supérieur à 800px*/
-@media screen and (min-width: 800px){
+@media screen and (min-width: 850px){
+
+    /*-------------------
+    *******HERO SECTION**
+    --------------------*/
+
+    /* -----------850px ----= Apparition des images au sruvol des H1 
+    =--------------------------------------------------------*/
+    .hero__headTitles{
+        padding-left: 1.5em;
+        
+    }
+    .hero__imgWrapper{
+        padding-left: 1em;
+    }
+    .hero__guepeImg{
+        right: 77px;
+    }
+
+    /*FIN APPARITION*/
+}
+
+/* Mq Pour les écrans dont la largeur est supérieur à 900px*/
+@media screen and (min-width: 900px){
+
+    /*-------------------
+    *******HERO SECTION**
+    --------------------*/
+
+    /* -----------900px ----= Apparition des images au sruvol des H1 
+    =--------------------------------------------------------*/
+
+    .hero__headTitles{
+        padding-left: 2em;
+        
+    }
+    .hero__imgWrapper{
+        padding-left: 1.5em;
+    }
+    .hero__frelonImg{
+        right: 96px;
+        top: -15px;
+    }
+
+    /*FIN APPARITION*/
+
+}
+/* Mq Pour les écrans dont la largeur est supérieur à 950px*/
+@media screen and (min-width: 950px){
+
+    /*-------------------
+    *******HERO SECTION**
+    --------------------*/
+
+    /* -----------950px ----= Apparition des images au sruvol des H1 
+    =--------------------------------------------------------*/
+
+    .hero__headTitles{
+        padding-left: 2.5em;
+        
+    }
+    .hero__imgWrapper{
+        padding-left: 2em;
+    }
+    .hero__imgWrapper p{
+        padding: 0 3em 5em 1.3em;
+
+    }
+    .hero__guepeImg{
+        right: 159px;
+    }
+    .hero__frelonImg{
+        right: 84px;
+    }
+    .hero__movie{
+        padding-right: 3em;
+    }
+
+
+    /*FIN APPARITION*/
 
 }
 /* Mq Pour les écrans dont la largeur est supérieur à 1024px*/
 @media screen and (min-width: 1024px){
+    
+
+    /*--------1024px-----------
+    *******HERO SECTION**
+    --------------------*/
+
+    /* -----------1024px ----= Apparition des images au sruvol des H1 
+    =--------------------------------------------------------*/
+
+    .hero__headTitles{
+        padding-left: 3.3em;
+        
+    }
+    .hero__imgWrapper p{
+        padding-right: 4em;
+    }
+    
+    .hero__guepeImg{
+        right: 215px;
+    }
+    .hero__frelonImg{
+        right: 200px;
+    }
+    .hero__movie{
+        padding-right: 4em;
+    }
+    
+    /*FIN APPARITION*/
+
+    /*---------1024px----------
+    *******HERO SECTION**
+    --------------------*/
+    .equipe__wrapper{
+        display: flex;
+        justify-content: space-around;
+    }
+    .equipe__cardAymeric {
+        margin-top: 0em; 
+    }
+    .equipe__card{
+        transition: 0.5s;
+        padding: 0 1em;
+        filter: drop-shadow(2px 4px 6px black);
+    }
+    .equipe__card:hover {
+        filter: invert(0.1);
+
+    }
+
 
 }
+/* Mq Pour les écrans dont la largeur est supérieur à 1224px*/
+@media screen and (min-width: 1224px){
+
+    /*--------1224px-----------
+    *******HERO SECTION**
+    --------------------*/
+
+    /* -----------1224px ----= Apparition des images au sruvol des H1 
+    =--------------------------------------------------------*/
+
+}
+
+
+
 }
