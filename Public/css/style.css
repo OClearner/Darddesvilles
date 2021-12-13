@@ -38,6 +38,61 @@ a{
 }
 
 
+/********************************************************
+----------------------ANIMATION--------------------------
+****************************************************** */
+
+.loader{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    animation: loader 3s 2s both;
+}
+@keyframes loader {
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+}
+
+.animate{
+    animation: load 3s infinite ease alternate;
+}
+@keyframes load {
+    0%{
+        transform: scale(0.9);  
+    }
+    10%{
+        transform: scale(0.7);
+    }
+    40%{
+        transform: scale(0.9);
+        
+    }
+    50%{
+        transform: scale(0.7);
+
+    }
+    80%{
+        opacity: 1;
+        transform: scale(0.9);
+    }
+    100%{
+        opacity: 0.9;
+        transform: scale(0.7);
+    }
+}
+
+
 /*     -------- 
 ---------------= HEADER = ------  */
 header{
