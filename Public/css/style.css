@@ -82,9 +82,7 @@ header{
     padding-bottom: 3em;
     text-align: center;
 }
-/* .hero__movie{
-    display: none;
-} */
+
 .hero__movie, .hero__imgWrapper, .hero__guepe img, .hero__frelon img, .hero__abeille img{
     display: none;
 }
@@ -107,23 +105,6 @@ header{
     visibility: visible;
     height: 28px;
 }
-/* .hero span::before{
-    content: "";
-  position: absolute;
-  width: 100%;
-  height: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(255, 255, 0, 0.801);
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
-} */
-/* .hero span:hover::before{
-  visibility: visible;
-  height: 28px;
-} */
-/* FIN Animation dans le h1 des différents nids de = à améliorer côté ui/ux */
-
 h1{
     padding: 0.5em 0;
     color: var(--red);
@@ -138,9 +119,6 @@ h1{
 .hero p {
     padding-bottom: 2em;
 }
-/* .hero__imgWrapper{
-    display: none;
-} */
 .hero__cta{
     font-family: "Jost", sans-serif;
     font-weight: 500;
@@ -167,7 +145,6 @@ h1{
 /* ------------- = @Section REALISATION = ----------------- */
 
 #portfolio{
-    /* background-color: #e7f0f6; */
     background: #1a1a1a;
     display: flex;
     flex-direction: column;
@@ -235,7 +212,6 @@ h1{
 /* ------------- = @Section ENGAGEMENT = ----------------- */
 #commitment{
     background-color: #e7f0f6;
-    /* background: #1a1a1a; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -338,6 +314,7 @@ h1{
 #estimate p{
     text-align: center;
     padding: 1.5em;
+    color: #1588d0;
 
 }
 
@@ -414,6 +391,8 @@ footer a{
         width: 100%; /*permet aux éléments ancre tel et mail de rester l'un sous l'autre */
     }
 }
+
+
 /* Mq Pour les écrans dont la largeur est supérieur à 400px*/
 @media screen and (min-width: 400px){
 
@@ -421,9 +400,9 @@ footer a{
     .footer__bottom{
         text-align: center;
     } 
-
-
 }
+
+
 /* Mq Pour les écrans dont la largeur est supérieur à 500px*/
 @media screen and (min-width: 500px){
 
@@ -473,10 +452,12 @@ footer a{
 
     }
 }
+
+
 /* Mq Pour les écrans dont la largeur est supérieur à 600px*/
 @media screen and (min-width: 600px){
 
-    /* --------------= FOOTER SECTION =------- */
+    /* ------------600px--= FOOTER SECTION =------- */
     .footer__wrapper{
         flex-direction: row;
         justify-content: space-around;
@@ -500,6 +481,8 @@ footer a{
 
 
 }
+
+
 /* Mq Pour les écrans dont la largeur est supérieur à 768px*/
 @media screen and (min-width: 768px){
 
@@ -592,27 +575,12 @@ footer a{
         margin-top: 4.5em;
         width: 80%;
     }
-    
-    /* .hero__title1{
-        position: relative;
-        padding-right: 7px;
-    }
-    .hero__title1::after{
-        content: ":";
-        position: absolute;
-        top: 0;
-        left: 128px;
-    } 
-    .hero__title2{
-        display: none;
-    }*/
     .hero__frelon{
         margin: 2em 0;
     }
     .hero__movie{
         display: flex;
         padding-right: 1em;
-
     }
 
 
@@ -669,47 +637,22 @@ footer a{
         flex-direction: column;
     }
     .hero__imgWrapper p{
-        text-align: justify;
-        padding: 0 1em 5em 0.5em;
+        align-self: center;
+        width: 70%;
     }
     .hero__sonObjectif{
         font-weight: bold;
     }
-    .hero__figureWrapper{
-        display: none;
-        /* display: flex;
-        justify-content: space-around; */
-    }
-    /* A Utiliser en mode Desktop si besoin. Concerne les Cadres pour Les Hyménoptères
-    .hero__figure{
-        border: thin #c0c0c0 solid;
-        display: flex;
-        flex-flow: column;
-        padding: 5px;
-        max-width: 220px;
-        margin: auto;
-    }
-    .hero__figure img{
-        max-width: 220px;
-        max-height: 150px;
-    }
-    figcaption {
-        background-color: #222;
-        color: #fff;
-        font: italic smaller sans-serif;
-        padding: 3px;
-        text-align: center;
-    } */
     video {
         width: 300px;
         height: 500px;
     }
 
-
     /*********** 768px
     ESPACEMENT UTILES POUR QUE LES LIENS DE NAVIGATION PERMETTENT DE 
     TOMBER DIRECTEMENT SUR LE H2 DE CHAQUE SECTION MODE TABLETTE !!!
     **************/
+
     #hero {
         padding: 8.5em 0;
     }
@@ -717,9 +660,7 @@ footer a{
         padding: 8em 0em 28em;
         overflow: hidden;
     }
-    #portfolio h2{
-        /* text-transform: uppercase; */
-    }
+    
     #commitment {
         padding: 7em 0;
     }
@@ -734,22 +675,19 @@ footer a{
     }
 
     /*********** 768px FIN
-    
     FIN    ESPACEMENT 
     **************/
-
 
 
     /*********** 
             REALISATION SECTION 768px
                     **************/
                     
-
-
     .realisation__box{
         width: 90%;
         height: 90%;
     } 
+
     /* ----------------768px-------=
      Customiser le centrage des images dans les prismes pour mettre en avant le travail effecté
      =-----------------------------------------------------------------------------------------*/
@@ -815,66 +753,14 @@ footer a{
     .engagement__card:hover{
         filter: invert(1);
     }
-
-
-    /*********** 
-            TEAM SECTION 768px
-                    **************/
-/* 
-    .equipe{
-        position: relative;
-        padding-bottom: 20em;
-    }
-    .equipe h2{
-        text-align: center;
-        padding: 1em;
-        margin-bottom: 2em;
-        color: #fff; 
-    }
-    .equipe__wrapper{
-        display: flex;
-        justify-content: space-between;
-    }
-    .equipe__picImg{
-        width: auto;
-    }
-    .equipe__card{
-        position: absolute;
-        width: 30%;
-        height: 63%;
-        transform-style: preserve-3d;
-        transition : all 0.5s ease;
-        background: yellow; 
-    }
-    .equipe__card:hover{
-        transform: rotateY(180deg);
-    }
-    .equipe__card-front{
-        position: absolute;
+    .engagement__card{
         width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        background: #1a1a1a; 
-        color: #f5d013;
     }
-    .equipe__card-back{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        background: #1a1a1a; 
-        color: #f5d013;
-    }
-    .equipe__presse{
-        display: none;
-    }
-    .equipe__presse img{
-        width: 150px;
-        height: 150px;
-    }   */
+
+}
     
 
-/* Mq Pour les écrans dont la largeur est supérieur à 800px*/
+/* Mq Pour les écrans dont la largeur est supérieur à 850px*/
 @media screen and (min-width: 850px){
 
     /*-------------------
@@ -896,6 +782,7 @@ footer a{
 
     /*FIN APPARITION*/
 }
+
 
 /* Mq Pour les écrans dont la largeur est supérieur à 900px*/
 @media screen and (min-width: 900px){
@@ -922,6 +809,8 @@ footer a{
     /*FIN APPARITION*/
 
 }
+
+
 /* Mq Pour les écrans dont la largeur est supérieur à 950px*/
 @media screen and (min-width: 950px){
 
@@ -939,10 +828,6 @@ footer a{
     .hero__imgWrapper{
         padding-left: 2em;
     }
-    .hero__imgWrapper p{
-        padding: 0 3em 5em 1.3em;
-
-    }
     .hero__guepeImg{
         right: 159px;
     }
@@ -952,11 +837,11 @@ footer a{
     .hero__movie{
         padding-right: 3em;
     }
-
-
     /*FIN APPARITION*/
 
 }
+
+
 /* Mq Pour les écrans dont la largeur est supérieur à 1024px*/
 @media screen and (min-width: 1024px){
     
@@ -969,13 +854,8 @@ footer a{
     =--------------------------------------------------------*/
 
     .hero__headTitles{
-        padding-left: 3.3em;
-        
-    }
-    .hero__imgWrapper p{
-        padding-right: 4em;
-    }
-    
+        padding-left: 3.3em;     
+    } 
     .hero__guepeImg{
         right: 215px;
     }
@@ -1008,20 +888,32 @@ footer a{
 
     }
 
-
 }
+
+
 /* Mq Pour les écrans dont la largeur est supérieur à 1224px*/
 @media screen and (min-width: 1224px){
 
     /*--------1224px-----------
     *******HERO SECTION**
     --------------------*/
+    .engagement__cardWrapper{
+        padding: 0 8em;
+    }
 
     /* -----------1224px ----= Apparition des images au sruvol des H1 
     =--------------------------------------------------------*/
+    .hero__headTitles{
+        padding-left: 5.5em;
+    }
+    .hero__movie{
+        padding-right: 7em;
+    }
 
-}
-
-
-
+    /*------- 1224px -----------
+    *********DEVIS SECTION -----***/
+    #estimate p{
+        width: 58%;
+    }
+    
 }
