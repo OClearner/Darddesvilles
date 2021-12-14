@@ -54,7 +54,8 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    /* background-color: #000; */
+    background-color: var(--wings);
     animation: loader 3s 2s both;
 }
 @keyframes loader {
@@ -66,6 +67,7 @@ a{
 
 .animate{
     animation: load 3s infinite ease alternate;
+    /* width: 500px; */
 }
 @keyframes load {
     0%{
@@ -80,7 +82,7 @@ a{
     }
     50%{
         transform: scale(0.7);
-
+        
     }
     80%{
         opacity: 1;
