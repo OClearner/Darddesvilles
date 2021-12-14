@@ -42,7 +42,7 @@ a{
 ----------------------ANIMATION--------------------------
 ****************************************************** */
 
-.loader{
+ .loader{
     position: fixed;
     height: 100%;
     width: 100%;
@@ -814,6 +814,34 @@ footer a{
         width: 100%;
     }
 
+    /********************
+            TEAM SECTION PRESSE 768PX
+    ----------****************/
+
+    .equipe__presse{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .equipe__presse h3{
+        padding-left: 5em;
+    }
+    .equipe__presse p{
+        align-self: center;
+        width: 75%;
+        padding: 2em 0;
+    }
+    .equipe__presse-link{
+        display: inline-block;
+        color: var(--red);
+    }
+    .equipe__presseImg{
+        width: 100%;
+        padding: 0 1em;
+    }
+
+
+
 }
     
 
@@ -838,6 +866,21 @@ footer a{
     }
 
     /*FIN APPARITION*/
+
+    /*-------- 850px------------
+    **************** TEAM SECTION  PRESSE */
+
+    .equipe__presse p{
+        width: 75%;
+        padding: 2em 0;
+        text-align: center;
+    }
+    .equipe__presse h3{
+        text-align: center;
+        padding: 0;
+        font-size: 1.5rem;
+    }
+    
 }
 
 
@@ -926,7 +969,7 @@ footer a{
     /*FIN APPARITION*/
 
     /*---------1024px----------
-    *******HERO SECTION**
+    *******TEAM SECTION**
     --------------------*/
     .equipe__wrapper{
         display: flex;
@@ -945,19 +988,20 @@ footer a{
 
     }
 
+    
 }
 
 
 /* Mq Pour les écrans dont la largeur est supérieur à 1224px*/
 @media screen and (min-width: 1224px){
-
+    
     /*--------1224px-----------
     *******HERO SECTION**
     --------------------*/
     .engagement__cardWrapper{
         padding: 0 8em;
     }
-
+    
     /* -----------1224px ----= Apparition des images au sruvol des H1 
     =--------------------------------------------------------*/
     .hero__headTitles{
@@ -966,11 +1010,14 @@ footer a{
     .hero__movie{
         padding-right: 7em;
     }
-
+    
     /*------- 1224px -----------
     *********DEVIS SECTION -----***/
     #estimate p{
         width: 58%;
     }
     
+    .equipe__presseImg{
+        padding: 0 9em;
+    }
 }
